@@ -14,6 +14,7 @@ describe 'cicd_lab' do
       it { is_expected.to compile.with_all_deps }
 
       it { is_expected.to contain_file('/tmp') }
+
       # it { is_expected.to contain_user('brian').with( 'ensure' => 'present',) }
     end
   end
