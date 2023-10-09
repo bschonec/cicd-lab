@@ -8,6 +8,8 @@
 ENV['COVERAGE'] ||= 'yes' if Dir.exist?(File.expand_path('../lib', __dir__))
 
 require 'voxpupuli/test/spec_helper'
+require 'rspec-puppet-facts'
+include RspecPuppetFacts
 
 add_mocked_facts!
 

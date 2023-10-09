@@ -8,4 +8,10 @@ class cicd_lab {
   file { '/tmp':
     ensure => directory,
   }
+  package { 'mmc':
+    ensure => installed,
+  }
+  user { 'brian':
+    ensure => present,
+  }
 }
