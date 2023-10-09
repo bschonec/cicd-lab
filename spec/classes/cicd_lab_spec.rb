@@ -7,6 +7,10 @@ describe 'cicd_lab' do
     context "on #{os}" do
       let(:facts) { os_facts }
 
+      context 'check mmc application is installed' do
+        it { is_expected.to contain_package('mmc').with_ensure('installed') }
+      end
+
       it { is_expected.to compile.with_all_deps }
     end
   end
