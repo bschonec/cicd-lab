@@ -6,6 +6,6 @@
 #   include cicd_lab
 class cicd_lab {
   file { '/tmp':
-     ensure => directory,
+    ensure => directory,
   }
 }
