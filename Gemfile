@@ -30,3 +30,4 @@ puppetversion = ENV['PUPPET_GEM_VERSION'] || '~> 7.24'
 gem 'puppet', puppetversion, :require => false, :groups => [:test]
 
 # vim: syntax=ruby
+gem 'rspec-puppet-facts', :require => false
